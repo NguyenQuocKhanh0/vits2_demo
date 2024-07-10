@@ -517,7 +517,7 @@ def train_and_evaluate(
                     optim_d,
                     hps.train.learning_rate,
                     epoch,
-                    os.path.join(hps.model_dir, "D_11.pth".format(global_step)),
+                    os.path.join(hps.model_dir, "D_11.pth"),
                 )
                 if net_dur_disc is not None:
                     utils.save_checkpoint(
