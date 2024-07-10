@@ -239,6 +239,7 @@ def run(rank, n_gpus, hps):
         print('LOADED CHECKPOINT...')
         global_step = (epoch_str - 1) * len(train_loader)
     except:
+        print('@@NOT LOADED CHECKPOINT...')
         epoch_str = 1
         global_step = 0
 
