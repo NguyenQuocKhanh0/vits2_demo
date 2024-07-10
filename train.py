@@ -236,6 +236,7 @@ def run(rank, n_gpus, hps):
                 net_dur_disc,
                 optim_dur_disc,
             )
+        print('LOADED CHECKPOINT...')
         global_step = (epoch_str - 1) * len(train_loader)
     except:
         epoch_str = 1
