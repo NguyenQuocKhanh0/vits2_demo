@@ -445,7 +445,7 @@ def train_and_evaluate(
                     )
                 )
                 logger.info([x.item() for x in losses] + [global_step, lr])
-
+                print('Train Epoch:', epoch, 'Loss: ', loss_gen_all)
                 scalar_dict = {
                     "loss/g/total": loss_gen_all,
                     "loss/d/total": loss_disc_all,
